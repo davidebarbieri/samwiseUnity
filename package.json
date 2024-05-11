@@ -1,0 +1,21 @@
+{
+  "name": "peevo.samwise.unity",
+  "version": "0.0.1",
+  "displayName": "Samwise Unity",
+  "description": "Samwise Integration for Unity.",
+  "unity": "2019.1",
+  "unityRelease": "0b5",
+  "dependencies": {
+  },
+  "keywords": [
+    "Samwise",
+    "Dialogue",
+    "System"
+  ],
+  "author": {
+    "name": "Davide 'PeevishDave' Barbieri",
+    "email": "davide.barbieri@ghostshark.it",
+    "url": "https://www.peevo.art"
+  },
+  "type": "tool"
+}
