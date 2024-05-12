@@ -37,6 +37,9 @@ namespace Peevo.Samwise.Unity
             {
                 foreach (var dialogue in asset.Dialogues)
                 {
+                    if (dialogue == null)
+                        continue;
+
                     if (dialogues.ContainsKey(dialogue.Label))
                     {
                         Debug.LogError("Duplicate dialogue " + dialogue.Label);
