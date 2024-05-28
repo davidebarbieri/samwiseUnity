@@ -8,6 +8,8 @@ namespace Peevo.Samwise.Unity
     [ScriptedImporter(1, "sam")]
     public class SamwiseImporter : ScriptedImporter
     {
+        public static bool ToInvalidateDrawers;
+
         public class SamwiseImporterProcessor : AssetPostprocessor
         {
             static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromAssetPaths, bool didDomainReload)
@@ -70,6 +72,8 @@ namespace Peevo.Samwise.Unity
 
             ctx.AddObjectToAsset("dialogues", asset);
             ctx.SetMainObject(asset);
+
+            ToInvalidateDrawers = true;
         }
 
         void AddStatistics(SamwiseAsset asset)
