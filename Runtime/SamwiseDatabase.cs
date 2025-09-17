@@ -87,6 +87,15 @@ namespace Peevo.Samwise.Unity
             Initialize();
             return cache.Contains(dialogue);
         }
+        
+        public void ClearCache()
+        {
+            if (cache != null)
+            {
+                GameObject.Destroy(cache);
+                cache = null;
+            }
+        }
 
         void Initialize()
         {
